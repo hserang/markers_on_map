@@ -1,10 +1,11 @@
-import React, {Component} from 'react'
-import {
+const React = require('react')
+const {Component} = require('react')
+const {feature} = require('topojson-client')
+const {
   geoMercator,
   geoPath
-} from 'd3-geo'
+} = require('d3-geo')
 
-import {feature} from 'topojson-client'
 
 class WorldMap extends Component {
   constructor() {
@@ -113,7 +114,7 @@ class WorldMap extends Component {
                 cx={this.projection()(server.coordinates)[0]}
                 cy={this.projection()(server.coordinates)[1]}
                 r={server.population/3000000}
-                fill="#E91E63"
+                fill="#43bded"
                 stroke="#FFFFFF"
                 className="marker"
                 onClick={() => this.handleMarkerClick(i)}
