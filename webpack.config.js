@@ -6,7 +6,7 @@ const path = require('path')
 const config = {
   entry: './client/index.js',
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'public/build'),
     filename: 'app.js'
   },
   module: {

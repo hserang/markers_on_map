@@ -21,7 +21,7 @@ const markup = `
   </head>
   <body class="m0">
   <div id="app"></div>
-  <script src="app.js"></script>
+  <script src="build/app.js"></script>
   </body>
   </html>`
 
