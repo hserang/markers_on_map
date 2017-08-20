@@ -28159,7 +28159,7 @@ var WorldMap = function (_Component) {
         null,
         React.createElement(
           'svg',
-          { width: 800, height: 450, viewBox: '0 0 800 450' },
+          { viewBox: '0 0 800 450' },
           React.createElement(
             'g',
             { className: 'countries' },
