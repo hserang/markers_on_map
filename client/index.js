@@ -8,7 +8,7 @@ class Header extends React.Component {
   render() {
     return (
       <header className="header">
-        <h1>Some Info Here</h1>
+        <h1>{this.props.text}</h1>
       </header>
     )
   }
@@ -18,7 +18,7 @@ class AppContainer extends React.Component {
   render() {
     return (
       <div className="appWrapper">
-        <Header/>
+        <Header text="your name here"/>
         <WorldMap/>
       </div>
     )
